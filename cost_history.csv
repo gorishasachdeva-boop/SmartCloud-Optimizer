@@ -1,0 +1,13 @@
+month,category,cost,note
+2026-08,Prod,94197,
+2026-08,Staging,109839,
+2026-08,Dev,118909,
+2026-08,Orphans,6677,
+2026-09,Prod,99115,
+2026-09,Staging,115964,
+2026-09,Dev,126457,
+2026-09,Orphans,7890,
+2026-10,Prod,104300,
+2026-10,Staging,121100,
+2026-10,Dev,144900,Dev cost grew the most this month
+2026-10,Orphans,8750,

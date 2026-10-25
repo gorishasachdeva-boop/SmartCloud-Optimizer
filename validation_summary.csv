@@ -1,0 +1,18 @@
+section,check,value,detail
+1. Resize safety (30-day replay on the new plan),Resize recommendations tested,10,"Every resize is replayed on its new, smaller plan."
+1. Resize safety (30-day replay on the new plan),Never ran out of capacity (max below 100%),10 of 10,"No single reading, including the daily peak, would have hit 100% CPU or memory."
+1. Resize safety (30-day replay on the new plan),99th percentile within planning limits,10 of 10,p99 CPU at or below 70% and p99 memory at or below 80% after the resize. A fail means the planning limit would be passed by the rarest peaks. See the table below.
+1. Resize safety (30-day replay on the new plan),Bursty or batch VMs that were resized,0,"Should be 0. These VMs look idle on average but peak hard, so shrinking them is unsafe."
+2. Average-based sizing vs this engine,Resizes an average-based tool would make,65,"Sized on average CPU and memory only, with the same 70% and 80% limits."
+2. Average-based sizing vs this engine,...of which would run out of capacity at the daily peak,50,At least 1% of readings would be above 100% on the smaller plan.
+2. Average-based sizing vs this engine,Monthly saving those broken resizes would claim (Rs),"117,600",Savings that would come with outages.
+2. Average-based sizing vs this engine,Types of VM it would break,"office_hours: 39, bursty: 8, batch: 3","Hidden labels, shown only to explain the result."
+2. Average-based sizing vs this engine,This engine: resizes that run out of capacity,0,"Same test, using p99 sizing for prod and bursty VMs."
+3. Detection accuracy (against hidden labels),Idle VMs: Stop/delete,"precision 100%, recall 100%","6 correct, 0 wrongly flagged, 0 missed. Truth: VMs generated as idle (about 1% CPU)."
+3. Detection accuracy (against hidden labels),Dev/staging office-hours VMs: Schedule shutdown,"precision 100%, recall 100%","50 correct, 0 wrongly flagged, 0 missed. Truth: VMs generated as busy only on weekdays 9 to 7."
+3. Detection accuracy (against hidden labels),Orphans: Delete orphan,"precision 100%, recall 100%","13 correct, 0 wrongly flagged, 0 missed. Truth: every row in orphans.csv. This mostly checks the pipeline, since orphans are listed in a file rather than discovered."
+4. Alerts,Planted anomalies found,2 of 2,A 3-day network spike and a disk filling 2 points per day.
+4. Alerts,"False alarms on VMs (daily peaks, batch jobs)",0,Alerts on machines with no planted problem. Bursty and batch VMs should not raise any.
+"5. Holdout test (learn on 21 days, test on the next 9)",Resizes tested,10,"The sizing rule is re-run using only the first 21 days, then that plan is replayed on the last 9 days, which it never saw."
+"5. Holdout test (learn on 21 days, test on the next 9)",Safe on the unseen 9 days (no reading at 100%),10 of 10,No CPU or memory reading on those days would have hit 100% on the chosen plan.
+"5. Holdout test (learn on 21 days, test on the next 9)",Same plan chosen with 21 days as with 30 days,10 of 10,Shows the recommendation is stable and does not depend on a few extra days.

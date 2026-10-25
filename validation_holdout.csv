@@ -1,0 +1,11 @@
+resource_id,name,environment,plan_chosen_on_21_days,plan_chosen_on_30_days,unseen_cpu_p99,unseen_cpu_max,unseen_mem_max,safe_on_unseen_days
+vm-012,dev-data-012,dev,S1,S1,20.6,22.6,58.4,True
+vm-027,dev-data-027,dev,S4,S4,20.6,23.4,56.8,True
+vm-059,prod-payments-059,prod,S2,S2,20.9,23.8,58.4,True
+vm-061,dev-search-061,dev,S2,S2,20.6,22.6,57.2,True
+vm-068,prod-platform-068,prod,S4,S4,21.7,23.8,57.6,True
+vm-084,staging-mobile-084,staging,S4,S4,21.2,24.4,58.4,True
+vm-086,prod-search-086,prod,S8,S8,21.3,23.4,58.8,True
+vm-096,prod-data-096,prod,S2,S2,20.7,22.6,58.2,True
+vm-099,staging-search-099,staging,S8,S8,20.9,22.6,58.2,True
+vm-100,staging-search-100,staging,S4,S4,21.1,23.4,61.2,True

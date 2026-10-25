@@ -1,0 +1,14 @@
+resource_id,type,region,size_gb,monthly_cost,days_unattached
+vol-001,Volume,Noida,50,300,167
+vol-002,Volume,Bangalore,100,600,134
+vol-003,Volume,Noida,200,1200,115
+vol-004,Volume,Bangalore,50,300,189
+vol-005,Volume,Noida,200,1200,125
+vol-006,Volume,Mumbai,50,300,192
+vol-007,Volume,Bangalore,500,3000,179
+vol-008,Volume,Noida,100,600,119
+ip-001,Public IP,Bangalore,0,250,145
+ip-002,Public IP,Mumbai,0,250,80
+ip-003,Public IP,Mumbai,0,250,57
+ip-004,Public IP,Bangalore,0,250,165
+ip-005,Public IP,Noida,0,250,146

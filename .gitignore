@@ -1,0 +1,5 @@
+venv/
+user_data/
+test_upload/
+__pycache__/
+generate_data_backup.py

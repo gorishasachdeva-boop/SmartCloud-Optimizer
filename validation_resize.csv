@@ -1,0 +1,11 @@
+resource_id,name,environment,from_plan,to_plan,cpu_p99_after,cpu_max_after,mem_p99_after,mem_max_after,p99_within_limits,never_saturates,archetype
+vm-012,dev-data-012,dev,S2,S1,20.8,24.4,54.8,59.8,True,True,low_usage
+vm-027,dev-data-027,dev,S8,S4,20.8,24.8,54.8,58.8,True,True,low_usage
+vm-059,prod-payments-059,prod,S4,S2,20.8,25.4,55.2,60.0,True,True,low_usage
+vm-061,dev-search-061,dev,S4,S2,21.0,23.8,55.2,61.2,True,True,low_usage
+vm-068,prod-platform-068,prod,S8,S4,21.2,23.8,55.2,60.0,True,True,low_usage
+vm-084,staging-mobile-084,staging,S8,S4,21.2,26.0,54.8,58.4,True,True,low_usage
+vm-086,prod-search-086,prod,S16,S8,21.4,24.0,54.8,61.6,True,True,low_usage
+vm-096,prod-data-096,prod,S4,S2,21.0,26.4,55.4,59.4,True,True,low_usage
+vm-099,staging-search-099,staging,S16,S8,21.0,22.6,55.2,59.8,True,True,low_usage
+vm-100,staging-search-100,staging,S8,S4,21.0,24.0,55.2,61.2,True,True,low_usage

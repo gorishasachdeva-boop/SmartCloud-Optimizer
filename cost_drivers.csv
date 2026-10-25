@@ -1,0 +1,5 @@
+driver,increase_rs_per_month,explanation,share_of_growth_pct
+Dev,25991,"Dev spend rose as new environments were added. Went from Rs 118,909 to Rs 144,900 per month.",53
+Staging,11261,"Staging spend rose alongside production (random illustrative growth). Went from Rs 109,839 to Rs 121,100 per month.",23
+Prod,10103,"Production spend rose with usage (random illustrative growth). Went from Rs 94,197 to Rs 104,300 per month.",20
+Orphans,2073,"Unattached volumes and IPs keep billing because nobody deleted them. Went from Rs 6,677 to Rs 8,750 per month.",4

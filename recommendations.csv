@@ -1,0 +1,80 @@
+resource_id,name,region,environment,team,plan,action,target_plan,current_cost,new_cost,saving,risk,reason
+vm-001,staging-mobile-001,Noida,staging,mobile,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-002,staging-platform-002,Noida,staging,platform,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-003,dev-mobile-003,Bangalore,dev,mobile,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-005,staging-payments-005,Mumbai,staging,payments,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 2.9%). Shut down 8 PM-8 AM and weekends.
+vm-007,staging-mobile-007,Mumbai,staging,mobile,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 2.9%). Shut down 8 PM-8 AM and weekends.
+vm-010,dev-platform-010,Bangalore,dev,platform,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-012,dev-data-012,Bangalore,dev,data,S2,Resize,S1,1400,700,700,Low,"Over-provisioned: p95 CPU is 10% (avg 7%) on S2. On S1, peak CPU would be 19% and memory 52%."
+vm-013,staging-data-013,Bangalore,staging,data,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-014,staging-search-014,Bangalore,staging,search,S16,Stop/delete,,11200,0,11200,Low,Idle: p99 CPU is only 1.8% (average 1.2%) for the whole 30 days.
+vm-017,dev-platform-017,Noida,dev,platform,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-019,staging-payments-019,Mumbai,staging,payments,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-021,dev-payments-021,Bangalore,dev,payments,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-024,staging-mobile-024,Bangalore,staging,mobile,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-025,dev-platform-025,Noida,dev,platform,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 33% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-027,dev-data-027,Bangalore,dev,data,S8,Resize,S4,5600,2800,2800,Low,"Over-provisioned: p95 CPU is 9% (avg 7%) on S8. On S4, peak CPU would be 19% and memory 52%."
+vm-032,staging-data-032,Bangalore,staging,data,S1,Stop/delete,,700,0,700,Low,Idle: p99 CPU is only 1.8% (average 1.2%) for the whole 30 days.
+vm-033,dev-search-033,Noida,dev,search,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-034,dev-platform-034,Bangalore,dev,platform,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-037,dev-platform-037,Noida,dev,platform,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-038,staging-data-038,Bangalore,staging,data,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-039,dev-payments-039,Mumbai,dev,payments,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-041,dev-platform-041,Mumbai,dev,platform,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-042,dev-search-042,Mumbai,dev,search,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-044,dev-payments-044,Noida,dev,payments,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-047,dev-payments-047,Mumbai,dev,payments,S8,Stop/delete,,5600,0,5600,Low,Idle: p99 CPU is only 1.8% (average 1.2%) for the whole 30 days.
+vm-048,dev-data-048,Bangalore,dev,data,S4,Stop/delete,,2800,0,2800,Low,Idle: p99 CPU is only 1.8% (average 1.2%) for the whole 30 days.
+vm-049,dev-search-049,Bangalore,dev,search,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-050,dev-payments-050,Noida,dev,payments,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-051,staging-data-051,Noida,staging,data,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-052,staging-platform-052,Bangalore,staging,platform,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-054,staging-mobile-054,Mumbai,staging,mobile,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-057,dev-platform-057,Noida,dev,platform,S8,Stop/delete,,5600,0,5600,Low,Idle: p99 CPU is only 1.8% (average 1.2%) for the whole 30 days.
+vm-059,prod-payments-059,Bangalore,prod,payments,S4,Resize,S2,2800,1400,1400,Low,"Over-provisioned: p99 CPU is 10% (avg 7%) on S4. On S2, peak CPU would be 21% and memory 55%."
+vm-060,dev-search-060,Bangalore,dev,search,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-061,dev-search-061,Bangalore,dev,search,S4,Resize,S2,2800,1400,1400,Low,"Over-provisioned: p95 CPU is 10% (avg 7%) on S4. On S2, peak CPU would be 19% and memory 52%."
+vm-062,dev-payments-062,Mumbai,dev,payments,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-063,staging-search-063,Mumbai,staging,search,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-064,dev-data-064,Mumbai,dev,data,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-065,dev-payments-065,Mumbai,dev,payments,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-066,staging-search-066,Noida,staging,search,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-067,dev-search-067,Bangalore,dev,search,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 33% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-068,prod-platform-068,Noida,prod,platform,S8,Resize,S4,5600,2800,2800,Low,"Over-provisioned: p99 CPU is 11% (avg 7%) on S8. On S4, peak CPU would be 21% and memory 55%."
+vm-069,dev-data-069,Noida,dev,data,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-070,dev-data-070,Mumbai,dev,data,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-072,dev-platform-072,Bangalore,dev,platform,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-074,dev-search-074,Noida,dev,search,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-075,dev-mobile-075,Mumbai,dev,mobile,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-076,staging-platform-076,Bangalore,staging,platform,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-078,dev-data-078,Bangalore,dev,data,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-079,staging-payments-079,Mumbai,staging,payments,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 2.9%). Shut down 8 PM-8 AM and weekends.
+vm-080,dev-data-080,Mumbai,dev,data,S2,Schedule shutdown,,1400,504,896,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-081,dev-payments-081,Noida,dev,payments,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-083,dev-platform-083,Noida,dev,platform,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-084,staging-mobile-084,Mumbai,staging,mobile,S8,Resize,S4,5600,2800,2800,Low,"Over-provisioned: p95 CPU is 10% (avg 7%) on S8. On S4, peak CPU would be 19% and memory 53%."
+vm-085,dev-platform-085,Noida,dev,platform,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-086,prod-search-086,Mumbai,prod,search,S16,Resize,S8,11200,5600,5600,Low,"Over-provisioned: p99 CPU is 11% (avg 7%) on S16. On S8, peak CPU would be 21% and memory 55%."
+vm-089,dev-mobile-089,Noida,dev,mobile,S4,Schedule shutdown,,2800,1008,1792,Low,Used in working hours (avg 33% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-090,staging-mobile-090,Bangalore,staging,mobile,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-091,staging-platform-091,Mumbai,staging,platform,S1,Schedule shutdown,,700,252,448,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-092,staging-mobile-092,Noida,staging,mobile,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-093,dev-platform-093,Bangalore,dev,platform,S1,Stop/delete,,700,0,700,Low,Idle: p99 CPU is only 1.7% (average 1.2%) for the whole 30 days.
+vm-094,staging-payments-094,Mumbai,staging,payments,S16,Schedule shutdown,,11200,4032,7168,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-096,prod-data-096,Bangalore,prod,data,S4,Resize,S2,2800,1400,1400,Low,"Over-provisioned: p99 CPU is 10% (avg 7%) on S4. On S2, peak CPU would be 21% and memory 55%."
+vm-097,staging-platform-097,Noida,staging,platform,S8,Schedule shutdown,,5600,2016,3584,Low,Used in working hours (avg 34% CPU) but near zero nights and weekends (p95 3.0%). Shut down 8 PM-8 AM and weekends.
+vm-099,staging-search-099,Mumbai,staging,search,S16,Resize,S8,11200,5600,5600,Low,"Over-provisioned: p95 CPU is 10% (avg 7%) on S16. On S8, peak CPU would be 19% and memory 53%."
+vm-100,staging-search-100,Noida,staging,search,S8,Resize,S4,5600,2800,2800,Low,"Over-provisioned: p95 CPU is 10% (avg 7%) on S8. On S4, peak CPU would be 19% and memory 52%."
+vol-001,vol-001,Noida,orphan,unassigned,Volume,Delete orphan,,300,0,300,Low,Unattached 50 GB volume has not been attached to any machine for 167 days but still costs Rs 300 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data.
+vol-002,vol-002,Bangalore,orphan,unassigned,Volume,Delete orphan,,600,0,600,Low,Unattached 100 GB volume has not been attached to any machine for 134 days but still costs Rs 600 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data.
+vol-003,vol-003,Noida,orphan,unassigned,Volume,Delete orphan,,1200,0,1200,Low,"Unattached 200 GB volume has not been attached to any machine for 115 days but still costs Rs 1,200 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data."
+vol-004,vol-004,Bangalore,orphan,unassigned,Volume,Delete orphan,,300,0,300,Low,Unattached 50 GB volume has not been attached to any machine for 189 days but still costs Rs 300 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data.
+vol-005,vol-005,Noida,orphan,unassigned,Volume,Delete orphan,,1200,0,1200,Low,"Unattached 200 GB volume has not been attached to any machine for 125 days but still costs Rs 1,200 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data."
+vol-006,vol-006,Mumbai,orphan,unassigned,Volume,Delete orphan,,300,0,300,Low,Unattached 50 GB volume has not been attached to any machine for 192 days but still costs Rs 300 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data.
+vol-007,vol-007,Bangalore,orphan,unassigned,Volume,Delete orphan,,3000,0,3000,Low,"Unattached 500 GB volume has not been attached to any machine for 179 days but still costs Rs 3,000 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data."
+vol-008,vol-008,Noida,orphan,unassigned,Volume,Delete orphan,,600,0,600,Low,Unattached 100 GB volume has not been attached to any machine for 119 days but still costs Rs 600 per month (rule: delete after 30+ days). Take a snapshot first if you are unsure it holds needed data.
+ip-001,ip-001,Bangalore,orphan,unassigned,Public IP,Delete orphan,,250,0,250,Low,Unused public IP has not been attached to any machine for 145 days but still costs Rs 250 per month (rule: delete after 30+ days).
+ip-002,ip-002,Mumbai,orphan,unassigned,Public IP,Delete orphan,,250,0,250,Low,Unused public IP has not been attached to any machine for 80 days but still costs Rs 250 per month (rule: delete after 30+ days).
+ip-003,ip-003,Mumbai,orphan,unassigned,Public IP,Delete orphan,,250,0,250,Low,Unused public IP has not been attached to any machine for 57 days but still costs Rs 250 per month (rule: delete after 30+ days).
+ip-004,ip-004,Bangalore,orphan,unassigned,Public IP,Delete orphan,,250,0,250,Low,Unused public IP has not been attached to any machine for 165 days but still costs Rs 250 per month (rule: delete after 30+ days).
+ip-005,ip-005,Noida,orphan,unassigned,Public IP,Delete orphan,,250,0,250,Low,Unused public IP has not been attached to any machine for 146 days but still costs Rs 250 per month (rule: delete after 30+ days).
